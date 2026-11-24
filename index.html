@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Divya Jyoti | Graphic Designer & Video Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f7f5;--ink:#12201a;--mute:#4d5d55;--line:#cfd9d3;--card:#fff;--c:#00a3c4;--m:#e6007e;--y:#ffd400;--blend:multiply;
+--head:"Bricolage Grotesque","Trebuchet MS",sans-serif;--body:"Instrument Sans","Segoe UI",Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0f1713;--ink:#eef3ef;--mute:#a3b1a9;--line:#2a3a32;--card:#16221c;--blend:screen}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0f1713;--ink:#eef3ef;--mute:#a3b1a9;--line:#2a3a32;--card:#16221c;--blend:screen}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--m);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{max-width:1100px;margin:auto;padding:12px 20px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav b{font-family:var(--head);font-weight:800;margin-right:auto;font-size:1.1rem}
+nav a{text-decoration:none;color:var(--mute);font-size:.95rem}
+nav a:hover{color:var(--ink)}
+main,footer{max-width:1100px;margin:auto;padding:0 20px}
+section{padding:72px 0 8px}
+h1,h2,h3{font-family:var(--head);margin:0;line-height:1}
+h2{font-size:clamp(1.9rem,5vw,2.8rem);font-weight:800;margin-bottom:28px}
+.hero{position:relative;padding:72px 0 56px;overflow:hidden}
+.hero h1{font-size:clamp(3.4rem,15vw,10rem);font-weight:800;letter-spacing:-.03em;line-height:.88;position:relative;z-index:2}
+.hero p{max-width:34em;font-size:1.2rem;color:var(--mute);margin:26px 0 0;position:relative;z-index:2}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;position:relative;z-index:2}
+.btn{display:inline-block;padding:12px 22px;border:2px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:600}
+.btn.main{background:var(--ink);color:var(--bg)}
+.dots{position:absolute;right:-30px;top:30px;width:min(60vw,460px);aspect-ratio:1;z-index:1;pointer-events:none}
+.dots i{position:absolute;width:62%;aspect-ratio:1;border-radius:50%;mix-blend-mode:var(--blend);opacity:.9;animation:join 1.4s cubic-bezier(.2,.8,.2,1) both}
+.dots i:nth-child(1){background:var(--c);left:0;top:0;--x:-50px;--y:-40px}
+.dots i:nth-child(2){background:var(--m);right:0;top:8%;--x:60px;--y:-30px}
+.dots i:nth-child(3){background:var(--y);left:20%;bottom:0;--x:0;--y:70px}
+@keyframes join{from{transform:translate(var(--x),var(--y))}to{transform:none}}
+.crop{position:absolute;width:22px;height:22px;border:0 solid var(--ink);z-index:2}
+.crop.a{left:0;top:16px;border-width:2px 0 0 2px}.crop.b{right:0;bottom:16px;border-width:0 2px 2px 0}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.chip{font:inherit;cursor:pointer;background:transparent;color:var(--ink);border:2px solid var(--line);border-radius:999px;padding:6px 16px}
+.chip[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--tag);border-radius:6px;overflow:hidden}
+.ph{aspect-ratio:4/5;display:grid;place-items:center;text-align:center;padding:16px;color:var(--mute);font-size:.9rem;background:repeating-linear-gradient(45deg,transparent 0 12px,var(--line) 12px 13px)}
+.card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.card div.cap{padding:12px 14px}
+.card h3{font-size:1.05rem;font-weight:500}
+.card small{color:var(--mute)}
+.two{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
+.two p{margin:0 0 1em;max-width:36em}
+ul.plain{list-style:none;padding:0;margin:0}
+ul.plain li{padding:10px 0;border-bottom:1px solid var(--line)}
+.tl{border-left:3px solid var(--ink);padding-left:22px;max-width:40em}
+.tl h3{font-size:1.4rem;font-weight:500}
+.tl .when{color:var(--mute);margin:4px 0 12px}
+.tl ul{margin:0;padding-left:1.1em}
+.tl li{margin-bottom:6px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.skills h3{font-size:1.15rem;font-weight:500;margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{border:1px solid var(--line);background:var(--card);border-radius:6px;padding:4px 12px;font-size:.95rem}
+.edu li{display:flex;justify-content:space-between;gap:16px}
+.edu span:last-child{color:var(--mute);white-space:nowrap}
+.mail{font-family:var(--head);font-weight:800;font-size:clamp(1.4rem,5.2vw,3rem);word-break:break-all;letter-spacing:-.02em;text-decoration-thickness:4px;text-decoration-color:var(--m);text-underline-offset:6px}
+footer{padding:56px 20px 40px;color:var(--mute);font-size:.9rem}
+@media (max-width:720px){.two{grid-template-columns:1fr;gap:12px}.dots{opacity:.55;top:90px}}
+@media (prefers-reduced-motion:reduce){.dots i{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><nav aria-label="Main"><b>Divya Jyoti</b><a href="#work">Work</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></header>
+<main>
+<div class="hero">
+  <span class="crop a"></span><span class="crop b"></span>
+  <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h1 id="name"></h1>
+  <p id="tagline"></p>
+  <div class="btns"><a class="btn main" href="#work">See my work</a><a class="btn" id="resumeBtn" href="#">Download resume</a></div>
+</div>
+
+<section id="work"><h2>Work</h2>
+  <div class="chips" id="chips" role="group" aria-label="Filter work by type"></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section id="about"><h2>About</h2>
+  <div class="two"><div id="about-text"></div><ul class="plain" id="does"></ul></div>
+</section>
+
+<section id="experience"><h2>Experience</h2><div class="tl" id="exp"></div></section>
+
+<section id="skills"><h2>Skills</h2><div class="skills" id="skillsBox"></div>
+  <h2 style="margin-top:56px">Education</h2><ul class="plain edu" id="edu"></ul>
+</section>
+
+<section id="contact"><h2>Contact</h2>
+  <p id="contact-line" style="color:var(--mute);margin:0 0 14px"></p>
+  <a class="mail" id="mail" href="#"></a>
+  <div class="btns"><a class="btn main" id="mailBtn" href="#">Send an email</a><a class="btn" id="resumeBtn2" href="#">Download resume</a><a class="btn" id="oldSite" href="#">Old portfolio</a></div>
+</section>
+</main>
+<footer id="foot"></footer>
+
+<script>
+/* ==== EDIT HERE: all text on the page comes from this block ==== */
+const SITE = {
+  name: "Divya Jyoti",
+  tagline: "Graphic designer and video editor in Delhi. I make social posts, marketplace listings, catalogues and videos that sell natural products.",
+  email: "divyajyoti810@gmail.com",
+  resume: "https://divyajyoti8.weebly.com/uploads/1/2/0/2/120292635/divya_jyoti_resume-1.pdf",
+  oldSite: "https://divyajyoti8.weebly.com/portfolio.html",
+  contactLine: "Open to freelance work and full-time roles. Write to me at",
+  about: [
+    "I work as a graphic designer and video editor at Hi-Tech Natural Products (India) Ltd. since 2019. Most of my day goes into making products look clear and trustworthy, on screen and in print.",
+    "I trained in applied art and VFX animation, and I also hold an M.A. in Political Science. That mix helps me explain an idea simply before I design it."
+  ],
+  does: ["Social media posts and campaigns", "Amazon and Flipkart product creatives", "Website banners and web design updates", "Catalogues, packaging and other print work", "Logos and brand artwork", "Product videos and motion graphics"],
+  experience: [{
+    role: "Graphic Designer & Video Editor", org: "Hi-Tech Natural Products (India) Ltd., Delhi", when: "2019 to present",
+    points: ["Design social media posts and promotional creatives for the brand’s products.", "Prepare product images and listings for Amazon, Flipkart and the company websites.", "Improve web design and keep the company websites visually consistent.", "Produce online and print material as the company needs it, including catalogues.", "Edit and animate product videos."]
+  }],
+  skills: {
+    "Design": ["Photoshop", "Illustrator", "CorelDRAW", "Canva"],
+    "Video and motion": ["Premiere Pro", "After Effects", "VFX and animation"],
+    "Office": ["Word", "Excel", "PowerPoint"],
+    "Languages": ["Hindi", "English"]
+  },
+  education: [
+    ["M.A. Political Science, IGNOU", "2022"],
+    ["B.A. (Hons.) Political Science, University of Delhi (SOL)", "2017 to 2020"],
+    ["Diploma in VFX and Animation, Arena Animation", "2017 to 2020"],
+    ["Diploma in Applied Art, Meera Bai Institute of Technology", "2015 to 2017"]
+  ],
+  /* Categories and their colours (CMYK-style) */
+  categories: {"Social media":"var(--m)", "E-commerce":"var(--c)", "Catalogue":"var(--y)", "Logo":"var(--ink)", "Video":"var(--ink)"},
+  /* Gallery: add your work here. img must be a data: URL (see note in chat). Leave img empty for a placeholder. */
+  work: [
+    {title:"Social media post", cat:"Social media", img:""},
+    {title:"Social media post", cat:"Social media", img:""},
+    {title:"Amazon product creative", cat:"E-commerce", img:""},
+    {title:"Flipkart product creative", cat:"E-commerce", img:""},
+    {title:"Product catalogue", cat:"Catalogue", img:""},
+    {title:"Brand logo", cat:"Logo", img:""},
+    {title:"Product video", cat:"Video", img:""},
+    {title:"Motion graphic", cat:"Video", img:""}
+  ]
+};
+/* ==== end of editable block ==== */
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+$("name").textContent = SITE.name;
+$("tagline").textContent = SITE.tagline;
+["resumeBtn","resumeBtn2"].forEach(i => $(i).href = SITE.resume);
+$("oldSite").href = SITE.oldSite;
+$("mail").href = $("mailBtn").href = "mailto:" + SITE.email;
+$("mail").textContent = SITE.email;
+$("contact-line").textContent = SITE.contactLine;
+$("about-text").innerHTML = SITE.about.map(p => "<p>" + esc(p) + "</p>").join("");
+$("does").innerHTML = SITE.does.map(d => "<li>" + esc(d) + "</li>").join("");
+$("exp").innerHTML = SITE.experience.map(e => "<h3>" + esc(e.role) + "</h3><div class=when>" + esc(e.org) + ", " + esc(e.when) + "</div><ul>" + e.points.map(p => "<li>" + esc(p) + "</li>").join("") + "</ul>").join("");
+$("skillsBox").innerHTML = Object.entries(SITE.skills).map(([k, v]) => "<div><h3>" + esc(k) + "</h3><div class=tags>" + v.map(t => "<span>" + esc(t) + "</span>").join("") + "</div></div>").join("");
+$("edu").innerHTML = SITE.education.map(e => "<li><span>" + esc(e[0]) + "</span><span>" + esc(e[1]) + "</span></li>").join("");
+$("foot").textContent = "© " + new Date().getFullYear() + " " + SITE.name;
+
+let current = "All";
+function drawGrid() {
+  $("grid").innerHTML = SITE.work.filter(w => current === "All" || w.cat === current).map(w =>
+    "<article class=card style=\"--tag:" + (SITE.categories[w.cat] || "var(--ink)") + "\">" +
+    (w.img ? "<img alt=\"" + esc(w.title) + "\" src=\"" + esc(w.img) + "\">" : "<div class=ph>" + esc(w.cat) + " work goes here</div>") +
+    "<div class=cap><h3>" + esc(w.title) + "</h3><small>" + esc(w.cat) + "</small></div></article>").join("");
+}
+function drawChips() {
+  $("chips").innerHTML = ["All"].concat(Object.keys(SITE.categories)).map(c =>
+    "<button class=chip aria-pressed=\"" + (c === current) + "\" data-c=\"" + esc(c) + "\">" + esc(c) + "</button>").join("");
+}
+$("chips").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  current = b.dataset.c; drawChips(); drawGrid();
+});
+drawChips(); drawGrid();
+</script>
+</body>
+</html>
